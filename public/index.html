@@ -10,7 +10,7 @@
 			overflow: hidden;
 		}
 
-		#desc {
+		#desc, #bottom {
 			position: absolute;
 			margin: 10px;
 			width: 200px;
@@ -24,12 +24,21 @@
 			text-decoration: none;
 			color: #fff;
 			margin-left: 0px;
+		}
+
+		#desc a {
 			transition: margin-left 1s cubic-bezier(.25, .3, .65, 1.07);
 		}
 
-		a:hover {
+		#desc a:hover {
 			margin-left: 10px;
 		}
+
+		#bottom {
+			bottom: 0.1px;
+			font-size: 32px;
+		}
+
 	</style>
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -47,6 +56,25 @@
 				Go back
 		</p>
 	</div>
+
+	<div id="bottom">
+		<a href="mailto:daimessdn@gmail.com">
+			<i class="fa fa-envelope"></i>
+		</a>
+		<a href="https://twitter.com/daimessdn">
+			<i class="fa fa-twitter"></i>
+		</a>
+		<a href="https://instagram.com/dimaswehhh">
+			<i class="fa fa-instagram"></i>
+		</a>
+		<a href="https://github.com/daimessdn">
+			<i class="fa fa-github"></i>
+		</a>
+		<a href="https://linkedin.com/in/dimaswehhh">
+			<i class="fa fa-linkedin"></i>
+		</a>
+	</div>
+
 	<script>
 		let mug;
 		const scene = new THREE.Scene();

@@ -19,7 +19,20 @@
 		h1 {
 			margin: 0px;
 		}
+
+		a {
+			text-decoration: none;
+			color: #fff;
+			margin-left: 0px;
+			transition: margin-left 1s cubic-bezier(.25, .3, .65, 1.07);
+		}
+
+		a:hover {
+			margin-left: 10px;
+		}
 	</style>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js" integrity="sha256-+5R1zw/Tcxp82QhhfAJlicTeM4LCzFxp6EvsZW3V9bE=" crossorigin="anonymous"></script>
 	<script src='threejs_loader/OBJLoader.js'></script>
 	<script src='threejs_loader/MTLLoader.js'></script>
@@ -28,13 +41,18 @@
 	<div id='desc'>
 		<h1>mug</h1>
 		<p>a superior kitchen tool for delightful teatime</p>
+		<p>
+			<a href="">
+				<i class="fa fa-arrow-circle-left"></i>
+				Go back
+		</p>
 	</div>
 	<script>
 		let mug;
 		const scene = new THREE.Scene();
 
 		const light = new THREE.DirectionalLight('#ffffff', 0.9);
-		light.position.set(-20, 0, 100);
+		light.position.set(0, 0, 100);
 		scene.add(light);
 
 		const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);

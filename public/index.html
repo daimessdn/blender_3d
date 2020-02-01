@@ -5,6 +5,19 @@
 	<style>
 		body {
 			margin: 0;
+			font-family: 'Helvetica Neue';
+			color: #fff;
+			overflow: hidden;
+		}
+
+		#desc {
+			position: absolute;
+			margin: 10px;
+			width: 200px;
+		}
+
+		h1 {
+			margin: 0px;
 		}
 	</style>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js" integrity="sha256-+5R1zw/Tcxp82QhhfAJlicTeM4LCzFxp6EvsZW3V9bE=" crossorigin="anonymous"></script>
@@ -12,6 +25,10 @@
 	<script src='threejs_loader/MTLLoader.js'></script>
 </head>
 <body>
+	<div id='desc'>
+		<h1>mug</h1>
+		<p>a superior kitchen tool for delightful teatime</p>
+	</div>
 	<script>
 		let mug;
 		const scene = new THREE.Scene();
@@ -48,8 +65,9 @@
 
 		function render() {
 			if (mug) {
-				mug.rotation.x += 0.01;
+				mug.rotation.x += 0.025;
 			}
+
 			requestAnimationFrame(render);
 			renderer.render(scene, camera);
 		}

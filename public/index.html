@@ -2,6 +2,11 @@
 <html>
 <head>
 	<title></title>
+	<style>
+		body {
+			margin: 0;
+		}
+	</style>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.js" integrity="sha256-+5R1zw/Tcxp82QhhfAJlicTeM4LCzFxp6EvsZW3V9bE=" crossorigin="anonymous"></script>
 	<script src='threejs_loader/OBJLoader.js'></script>
 	<script src='threejs_loader/MTLLoader.js'></script>
@@ -43,10 +48,8 @@
 
 		function render() {
 			if (mug) {
-				mug.rotation.x += 0.01
-				mug.rotation.y += 0.01
+				mug.rotation.x += 0.01;
 			}
-
 			requestAnimationFrame(render);
 			renderer.render(scene, camera);
 		}

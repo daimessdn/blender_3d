@@ -32,3 +32,6 @@ node index
 
 ## about the author (or the coder)
 [click here](https://github.com/daimessdn)
+
+## thanks to
+I would like to say many thanks to [Kris Foster](https://www.linkedin.com/in/kris-foster-266094138/) for his knowledge and his [YouTube video](https://www.youtube.com/watch?v=HY_oDh0uHlg) that helps me to publish my first Blender project indirectly on the web. you can view his other videos by [clicking here](https://www.youtube.com/channel/UCWkzkhQ3syxBjjAYwqCbzYg).

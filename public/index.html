@@ -126,9 +126,9 @@
 
 		// render
 		function render() {
-			// if (mug) {
-			// 	mug.rotation.x += 0.025;
-			// }
+			if (mug) {
+				mug.rotation.y += 0.025;
+			}
 
 			controls.update();
 			requestAnimationFrame(render);

@@ -28,6 +28,7 @@ node index
 
 ## language(s) feature
 - Node.js (as a main server)
+- netlify-lambda and serverless-http (as tools to export projects to Netlify)
 - Three.js (a 3D library, CDN is used rather than local library)
 
 ## about the author (or the coder)

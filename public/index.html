@@ -54,13 +54,13 @@
 </head>
 <body>
 	<div id='desc'>
-		<h1>mug</h1>
-		<p>a superior kitchen tool for delightful teatime</p>
+		<h1>CORONA STRIKES!!!</h1>
+		<!-- <p>let's blow the candles and make a wish, hoping your wish come true...</p>
 		<p>
 			<a href="">
-				<i class="fa fa-arrow-circle-left"></i>
-				Go back
-		</p>
+				<i class="fa fa-arrow-circle-right"></i>
+				See the message.
+		</p> -->
 	</div>
 
 	<div id="bottom">
@@ -82,7 +82,7 @@
 	</div>
 
 	<script>
-		let mug;								// object init
+		let birthday_cake;								// object init
 		const scene = new THREE.Scene();		// scene init
 
 		// adding light into scene
@@ -109,14 +109,14 @@
 		mtlLoader.setPath('/blender_files/');
 
 		new Promise((resolve) => {
-			mtlLoader.load('mug1.mtl', (materials) => {
+			mtlLoader.load('corona2.mtl', (materials) => {
 				resolve(materials);
 			})
 		}).then((materials) => {
 			materials.preload();
 			objLoader.setMaterials(materials);
-			objLoader.load('mug1.obj', (object) => {
-				mug = object;
+			objLoader.load('corona2.obj', (object) => {
+				birthday_cake = object;
 				scene.add(object);
 			})
 		})
@@ -126,8 +126,8 @@
 
 		// render
 		function render() {
-			if (mug) {
-				mug.rotation.y += 0.025;
+			if (birthday_cake) {
+				birthday_cake.rotation.y += 0.01;
 			}
 
 			controls.update();
